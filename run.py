@@ -85,6 +85,10 @@ def main():
 							print('Please choose an option for entering a password: \n ep-enter existing password \n gp-generate a password \n ex-exit')
 							psw_choice = input('Enter an option: ').lower().strip()
 							print("-"*40)
+                            if psw_choice == 'ep':
+								print(" ")
+								password = input('Enter your password: ').strip()
+								break
                         
     
 
