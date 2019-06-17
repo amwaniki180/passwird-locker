@@ -52,14 +52,26 @@ def main():
 		if short_code == 'ex':
 			break
     elif short_code == 'ca':
-			print("-"*60)
+			print("-"*40)
 			print(' ')
-			print('To create a new account:')
+			print('create a new account:')
 			first_name = input('Enter your first name - ').strip()
 			last_name = input('Enter your last name - ').strip()
 			password = input('Enter your password - ').strip()
 			save_user(create_user(first_name,last_name,password))
 			print(" ")
 			print(f'New Account Created for: {first_name} {last_name} using password: {password}')
+            if user_exists == user_name:
+				print(" ")
+				print(f'Welcome {user_name}. Please choose an option to continue.')
+				print(' ')
+				while True:
+					print("-"*40)
+					print('Navigation codes: \n cc-Create a Credential \n dc-Display Credentials \n copy-Copy Password \n ex-Exit')
+					short_code = input('Enter a choice: ').lower().strip()
+					print("-"*30)
+					if short_code == 'ex':
+						print(" ")
+						print(f'Goodbye {user_name}')
     
 
