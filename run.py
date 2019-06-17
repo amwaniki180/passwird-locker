@@ -41,4 +41,6 @@ def copy_credential(site_name):
 	Function to copy a credentials details to the clipboard
 	'''
 	return Credential.copy_credential(site_name)
-
+def main():
+	print(' ')
+	print('Hello! Welcome to Password Locker.')
