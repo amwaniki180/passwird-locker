@@ -1,5 +1,6 @@
 import pyperclip
-
+import string
+import random
 
 class Credential:
 	'''
