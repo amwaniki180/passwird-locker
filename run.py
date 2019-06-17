@@ -35,3 +35,4 @@ def save_credential(credential):
 	'''
 	Function to save a newly created credential
 	'''
+    Credential.save_credentials(credential)
